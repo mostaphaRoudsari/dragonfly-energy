@@ -1,0 +1,24 @@
+dragonfly\_energy package
+=========================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    dragonfly_energy.properties
+
+Submodules
+----------
+
+.. toctree::
+
+   dragonfly_energy.run
+
+Module contents
+---------------
+
+.. automodule:: dragonfly_energy
+    :members:
+    :undoc-members:
+    :show-inheritance:

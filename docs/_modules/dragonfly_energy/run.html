@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>dragonfly_energy.run &#8212; dragonfly-energy  documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          dragonfly-energy</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dragonfly_energy.html">dragonfly_energy package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../dragonfly_energy.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dragonfly_energy.properties.html">dragonfly_energy.properties package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../dragonfly_energy.properties.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dragonfly_energy.properties.building.html">dragonfly_energy.properties.building module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dragonfly_energy.properties.context.html">dragonfly_energy.properties.context module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dragonfly_energy.properties.model.html">dragonfly_energy.properties.model module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dragonfly_energy.properties.room2d.html">dragonfly_energy.properties.room2d module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dragonfly_energy.properties.story.html">dragonfly_energy.properties.story module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../dragonfly_energy.properties.html#module-dragonfly_energy.properties">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../dragonfly_energy.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dragonfly_energy.run.html">dragonfly_energy.run module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../dragonfly_energy.html#module-dragonfly_energy">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dragonfly_energy.html">dragonfly_energy package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dragonfly_energy.html">dragonfly_energy package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for dragonfly_energy.run</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding=utf-8</span>
+<span class="sd">&quot;&quot;&quot;Module for running geoJSON and OpenStudio files through URBANopt.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="kn">from</span> <span class="nn">ladybug.futil</span> <span class="kn">import</span> <span class="n">nukedir</span><span class="p">,</span> <span class="n">write_to_file</span>
+
+
+<div class="viewcode-block" id="prepare_urbanopt_folder"><a class="viewcode-back" href="../../dragonfly_energy.run.html#dragonfly_energy.run.prepare_urbanopt_folder">[docs]</a><span class="k">def</span> <span class="nf">prepare_urbanopt_folder</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="n">geojson_dict</span><span class="p">,</span> <span class="n">epw_file_path</span><span class="p">,</span> <span class="n">cpu_count</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Prepare a directory for URBANopt simulation.</span>
+
+<span class="sd">    This includes deleting any uo_folder that already exists, running the uo -p</span>
+<span class="sd">    command, and deleting several files it generates like example_project.json,</span>
+<span class="sd">    the Buffalo EPW files, the .osm files, and the HighEfficiency mapper. Then,</span>
+<span class="sd">    a geoJOSN is exported using the input geojson_dict. Then, the ChangeBuildingLocation</span>
+<span class="sd">    measure is skipped in the base_workdlow.osw. Lastly, the uo -m command</span>
+<span class="sd">    is run to generate the scenario csv file from the exported geoJSON and</span>
+<span class="sd">    Baseline mapper.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        uo_folder: The directory into which the URBANopt simulation will be run.</span>
+<span class="sd">        geojson_dict: A Python dictionary in a geoJSON style, which will serve</span>
+<span class="sd">            as the basis of a feature file for the URBANopt simulation. This</span>
+<span class="sd">            dictionary can be obtained from a dragonfly Model by calling the</span>
+<span class="sd">            to_geojson_dict method.</span>
+<span class="sd">        epw_file_path: The full path to an EPW file to be used for the simulation.</span>
+<span class="sd">        cpu_count: A positive integer for the number of CPUs to use in the</span>
+<span class="sd">            simulation. (Default: 2).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Paths to the following files</span>
+
+<span class="sd">        -   feature -- Path to a .geojson file containing the footprints of buildings</span>
+<span class="sd">            to be simulated.</span>
+
+<span class="sd">        -   scenario -- Path to a .csv file for the URBANopt scenario.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># nuke the directory if it already exists</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">):</span>
+        <span class="n">nukedir</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+    
+    <span class="c1"># run the folder creation command and check that it was created</span>
+    <span class="n">cmd_str</span> <span class="o">=</span> <span class="s1">&#39;uo -p </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">cmd_str</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="s1">&#39;Gemfile&#39;</span><span class="p">)),</span> \
+        <span class="s1">&#39;URBANopt project folder creation failed.</span><span class="se">\n</span><span class="s1">&#39;</span> \
+        <span class="s1">&#39;Be sure that you have installed the URBANopt CLI correctly.&#39;</span>
+
+    <span class="c1"># delete the EPW file and replace it with the correct file</span>
+    <span class="n">weather_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="s1">&#39;weather&#39;</span><span class="p">)</span>
+    <span class="n">nukedir</span><span class="p">(</span><span class="n">weather_dir</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+    <span class="n">epw_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">epw_file_path</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">epw_file_path</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">weather_dir</span><span class="p">,</span> <span class="n">epw_name</span><span class="p">))</span>
+
+    <span class="c1"># delete the OSM files and the HighEfficiency mapper</span>
+    <span class="n">osm_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="s1">&#39;osm_building&#39;</span><span class="p">)</span>
+    <span class="n">nukedir</span><span class="p">(</span><span class="n">osm_dir</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="s1">&#39;mappers&#39;</span><span class="p">,</span> <span class="s1">&#39;HighEfficiency.rb&#39;</span><span class="p">))</span>
+
+    <span class="c1"># skip the ChangeBuildingLocation measure</span>
+    <span class="n">base_osw</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="s1">&#39;mappers&#39;</span><span class="p">,</span> <span class="s1">&#39;base_workflow.osw&#39;</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">base_osw</span><span class="p">,</span> <span class="s1">&#39;r+&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s1">&#39;steps&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;arguments&#39;</span><span class="p">][</span><span class="s1">&#39;__SKIP__&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># reset file position to the beginning</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">truncate</span><span class="p">()</span>  <span class="c1"># remove remaining part</span>
+    
+    <span class="c1"># set the CPU count based on the input</span>
+    <span class="k">if</span> <span class="n">cpu_count</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">runner_conf</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="s1">&#39;runner.conf&#39;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">runner_conf</span><span class="p">,</span> <span class="s1">&#39;r+&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+            <span class="n">data</span><span class="p">[</span><span class="s1">&#39;num_parallel&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cpu_count</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># reset file position to the beginning</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">truncate</span><span class="p">()</span>  <span class="c1"># remove remaining part</span>
+
+    <span class="c1"># delete the example_project.json and write out the geoJSON</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="s1">&#39;example_project.json&#39;</span><span class="p">))</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">model_name</span> <span class="o">=</span> <span class="n">geojson_dict</span><span class="p">[</span><span class="s1">&#39;project&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+        <span class="n">geojson_dict</span><span class="p">[</span><span class="s1">&#39;project&#39;</span><span class="p">][</span><span class="s1">&#39;weather_filename&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">epw_name</span>
+    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+        <span class="n">model_name</span> <span class="o">=</span> <span class="s1">&#39;unnamed&#39;</span>
+    <span class="n">feature</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">.geojson&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">model_name</span><span class="p">))</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">feature</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">geojson_dict</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+    <span class="c1"># run the command to generate the scenario csv file</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;nt&#39;</span><span class="p">:</span>  <span class="c1"># we are on Windows</span>
+        <span class="n">_make_scenario_windows</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>  <span class="c1"># we are on Mac, Linux, or some other unix-based system</span>
+        <span class="n">_make_scenario_unix</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
+    <span class="n">scenario</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">uo_folder</span><span class="p">,</span> <span class="s1">&#39;baseline_scenario.csv&#39;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">scenario</span><span class="p">),</span> \
+        <span class="s1">&#39;URBANopt scenario CSV creation creation failed.&#39;</span>
+
+    <span class="k">return</span> <span class="n">feature</span><span class="p">,</span> <span class="n">scenario</span></div>
+
+
+<div class="viewcode-block" id="run_urbanopt"><a class="viewcode-back" href="../../dragonfly_energy.run.html#dragonfly_energy.run.run_urbanopt">[docs]</a><span class="k">def</span> <span class="nf">run_urbanopt</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">,</span> <span class="n">scenario_file_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Run a feature and scenario file through URBANopt on any operating system.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        feature_file_path: The full path to a .geojson file containing the</span>
+<span class="sd">            footprints of buildings to be simulated.</span>
+<span class="sd">        scenario_file_path: The full path to  a .csv file for the URBANopt scenario.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A series of file paths to the simulation output files</span>
+
+<span class="sd">        -   sql -- Array of paths to .sqlite files containing all simulation results.</span>
+
+<span class="sd">        -   zsz -- Array of paths to .csv files containing detailed zone load</span>
+<span class="sd">            information recorded over the course of the design days.</span>
+
+<span class="sd">        -   rdd -- Array of paths to .rdd files containing all possible outputs</span>
+<span class="sd">            that can be requested from the simulation.</span>
+
+<span class="sd">        -   html -- Array of paths to .html files containing all summary reports.</span>
+
+<span class="sd">        -   err -- Array of paths to .err files containing all errors and warnings from the</span>
+<span class="sd">            simulation.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># run the simulation</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;nt&#39;</span><span class="p">:</span>  <span class="c1"># we are on Windows</span>
+        <span class="n">directory</span> <span class="o">=</span> <span class="n">_run_urbanopt_windows</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">,</span> <span class="n">scenario_file_path</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>  <span class="c1"># we are on Mac, Linux, or some other unix-based system</span>
+        <span class="n">directory</span> <span class="o">=</span> <span class="n">_run_urbanopt_unix</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">,</span> <span class="n">scenario_file_path</span><span class="p">)</span>
+
+    <span class="c1"># output the simulation files</span>
+    <span class="k">return</span> <span class="n">_output_urbanopt_files</span><span class="p">(</span><span class="n">directory</span><span class="p">)</span></div>
+
+
+<span class="k">def</span> <span class="nf">_make_scenario_windows</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Generate a scenario file using URBANopt CLI on a Windows-based os.</span>
+
+<span class="sd">    A batch file will be used to run the URBANopt CLI.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        feature_file_path: The full path to a .geojson file.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">directory</span><span class="p">,</span> <span class="n">feature_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">)</span>
+    <span class="n">clean_feature</span> <span class="o">=</span> <span class="n">feature_file_path</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span>
+    <span class="c1"># Write the batch file to call URBANopt CLI</span>
+    <span class="n">working_drive</span> <span class="o">=</span> <span class="n">directory</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">batch</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="se">\n</span><span class="s1">cd </span><span class="si">{}</span><span class="se">\n</span><span class="s1">uo -m -f </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">working_drive</span><span class="p">,</span> <span class="n">directory</span><span class="p">,</span> <span class="n">clean_feature</span><span class="p">)</span>
+    <span class="n">batch_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s1">&#39;make_scenario.bat&#39;</span><span class="p">)</span>
+    <span class="n">write_to_file</span><span class="p">(</span><span class="n">batch_file</span><span class="p">,</span> <span class="n">batch</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># run the batch file</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">batch_file</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_make_scenario_unix</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Generate a scenario file using URBANopt CLI on a Unix-based os.</span>
+
+<span class="sd">    This includes both Mac OS and Linux since a shell will be used to run</span>
+<span class="sd">    the URBANopt CLI.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        feature_file_path: The full path to a .geojson file.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">directory</span><span class="p">,</span> <span class="n">feature_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">)</span>
+    <span class="n">clean_feature</span> <span class="o">=</span> <span class="n">feature_file_path</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span>
+    <span class="c1"># Write the shell script to call OpenStudio CLI</span>
+    <span class="n">shell</span> <span class="o">=</span> <span class="s1">&#39;#!/usr/bin/env bash</span><span class="se">\n</span><span class="s1">uo -m -f </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">clean_feature</span><span class="p">)</span>
+    <span class="n">shell_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s1">&#39;make_scenario.sh&#39;</span><span class="p">)</span>
+    <span class="n">write_to_file</span><span class="p">(</span><span class="n">shell_file</span><span class="p">,</span> <span class="n">shell</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># make the shell script executable using subprocess.check_call</span>
+    <span class="c1"># this is more reliable than native Python chmod on Mac</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">check_call</span><span class="p">([</span><span class="s1">&#39;chmod&#39;</span><span class="p">,</span><span class="s1">&#39;u+x&#39;</span><span class="p">,</span> <span class="n">shell_file</span><span class="p">])</span>
+
+    <span class="c1"># run the shell script</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">shell_file</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_run_urbanopt_windows</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">,</span> <span class="n">scenario_file_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Run a feature and scenario file through URBANopt on a Windows-based os.</span>
+
+<span class="sd">    A batch file will be used to run the simulation.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        feature_file_path: The full path to a .geojson file containing the</span>
+<span class="sd">            footprints of buildings to be simulated.</span>
+<span class="sd">        scenario_file_path: The full path to  a .csv file for the URBANopt scenario.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Path to the folder out of which the simulation was run.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># check the input file</span>
+    <span class="n">directory</span> <span class="o">=</span> <span class="n">_check_urbanopt_file</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">,</span> <span class="n">scenario_file_path</span><span class="p">)</span>
+
+    <span class="c1"># Write the batch file to call URBANopt CLI</span>
+    <span class="n">working_drive</span> <span class="o">=</span> <span class="n">directory</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">batch</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="se">\n</span><span class="s1">uo -r -f </span><span class="si">{}</span><span class="s1"> -s </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">working_drive</span><span class="p">,</span> <span class="n">feature_file_path</span><span class="p">,</span> <span class="n">scenario_file_path</span><span class="p">)</span>
+    <span class="n">batch_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s1">&#39;run_simulation.bat&#39;</span><span class="p">)</span>
+    <span class="n">write_to_file</span><span class="p">(</span><span class="n">batch_file</span><span class="p">,</span> <span class="n">batch</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># run the batch file</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">batch_file</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">directory</span>
+
+
+<span class="k">def</span> <span class="nf">_run_urbanopt_unix</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">,</span> <span class="n">scenario_file_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Run a feature and scenario file through URBANopt on a Unix-based os.</span>
+
+<span class="sd">    This includes both Mac OS and Linux since a shell will be used to run</span>
+<span class="sd">    the simulation.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        feature_file_path: The full path to a .geojson file containing the</span>
+<span class="sd">            footprints of buildings to be simulated.</span>
+<span class="sd">        scenario_file_path: The full path to  a .csv file for the URBANopt scenario.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Path to the folder out of which the simulation was run.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># check the input file</span>
+    <span class="n">directory</span> <span class="o">=</span> <span class="n">_check_urbanopt_file</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">,</span> <span class="n">scenario_file_path</span><span class="p">)</span>
+
+    <span class="c1"># Write the shell script to call OpenStudio CLI</span>
+    <span class="n">shell</span> <span class="o">=</span> <span class="s1">&#39;#!/usr/bin/env bash</span><span class="se">\n</span><span class="s1">uo -r -f </span><span class="si">{}</span><span class="s1"> -s </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">feature_file_path</span><span class="p">,</span> <span class="n">scenario_file_path</span><span class="p">)</span>
+    <span class="n">shell_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s1">&#39;run_simulation.sh&#39;</span><span class="p">)</span>
+    <span class="n">write_to_file</span><span class="p">(</span><span class="n">shell_file</span><span class="p">,</span> <span class="n">shell</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># make the shell script executable using subprocess.check_call</span>
+    <span class="c1"># this is more reliable than native Python chmod on Mac</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">check_call</span><span class="p">([</span><span class="s1">&#39;chmod&#39;</span><span class="p">,</span><span class="s1">&#39;u+x&#39;</span><span class="p">,</span> <span class="n">shell_file</span><span class="p">])</span>
+
+    <span class="c1"># run the shell script</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">shell_file</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">directory</span>
+
+
+<span class="k">def</span> <span class="nf">_check_urbanopt_file</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">,</span> <span class="n">scenario_file_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Prepare an OSW file to be run through OpenStudio CLI.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        feature_file_path: The full path to a .geojson file containing the</span>
+<span class="sd">            footprints of buildings to be simulated.</span>
+<span class="sd">        scenario_file_path: The full path to  a .csv file for the URBANopt scenario.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The folder in which the OSW exists and out of which the OpenStudio CLI</span>
+<span class="sd">        will operate.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># check the input files</span>
+    <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">),</span> \
+        <span class="s1">&#39;No feature file found at </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">scenario_file_path</span><span class="p">),</span> \
+        <span class="s1">&#39;No scenario file found at </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">scenario_file_path</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">feature_file_path</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">_output_urbanopt_files</span><span class="p">(</span><span class="n">directory</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get the paths to the simulation output files given the urbanopt directory.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        directory: The path to where the URBANopt feature and scenario files</span>
+<span class="sd">            were simulated.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A series of file paths to the simulation output files</span>
+
+<span class="sd">        -   sql -- Array of paths to .sqlite files containing all simulation results.</span>
+
+<span class="sd">        -   zsz -- Array of paths to .csv files containing detailed zone load</span>
+<span class="sd">            information recorded over the course of the design days.</span>
+
+<span class="sd">        -   rdd -- Array of paths to .rdd files containing all possible outputs</span>
+<span class="sd">            that can be requested from the simulation.</span>
+
+<span class="sd">        -   html -- Array of paths to .html files containing all summary reports.</span>
+
+<span class="sd">        -   err -- Array of paths to .err files containing all errors and warnings from the</span>
+<span class="sd">            simulation.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># empty list which will be filled with simulation output files</span>
+    <span class="n">sql</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">zsz</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">rdd</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">html</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">err</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># generate paths to the simulation files and check their existance</span>
+    <span class="n">sim_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="s1">&#39;run&#39;</span><span class="p">,</span> <span class="s1">&#39;baseline_scenario&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">bldg_name</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">sim_dir</span><span class="p">):</span>
+        <span class="n">bldg_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sim_dir</span><span class="p">,</span> <span class="n">bldg_name</span><span class="p">)</span>
+        <span class="n">sql_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bldg_dir</span><span class="p">,</span> <span class="s1">&#39;eplusout.sql&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">sql_file</span><span class="p">):</span>
+            <span class="n">sql</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sql_file</span><span class="p">)</span>
+        <span class="n">zsz_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bldg_dir</span><span class="p">,</span> <span class="s1">&#39;epluszsz.csv&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">zsz_file</span><span class="p">):</span>
+            <span class="n">zsz</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">zsz_file</span><span class="p">)</span>
+        <span class="n">rdd_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bldg_dir</span><span class="p">,</span> <span class="s1">&#39;eplusout.rdd&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">rdd_file</span><span class="p">):</span>
+            <span class="n">rdd</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rdd_file</span><span class="p">)</span>
+        <span class="n">html_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bldg_dir</span><span class="p">,</span> <span class="s1">&#39;eplusout.html&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">html_file</span><span class="p">):</span>
+            <span class="n">html</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">html_file</span><span class="p">)</span>
+        <span class="n">err_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bldg_dir</span><span class="p">,</span> <span class="s1">&#39;eplusout.err&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">err_file</span><span class="p">):</span>
+            <span class="n">err</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">err_file</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">sql</span><span class="p">,</span> <span class="n">zsz</span><span class="p">,</span> <span class="n">rdd</span><span class="p">,</span> <span class="n">html</span><span class="p">,</span> <span class="n">err</span>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
